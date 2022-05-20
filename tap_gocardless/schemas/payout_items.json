@@ -2,10 +2,10 @@
   "type": "object",
   "properties": {
     "amount": {
-      "type": "string"
+      "type": ["integer", "null"]
     },
     "type": {
-      "type": "string"
+      "type": ["string", "null"]
     },
     "taxes": {
       "type": "array",
@@ -13,22 +13,22 @@
         "type": "object",
         "properties": {
           "amount": {
-            "type": "string"
+            "type": ["integer", "null"]
           },
           "currency": {
-            "type": "string"
+            "type": ["string", "null"]
           },
           "destination_amount": {
-            "type": "string"
+            "type": ["string", "null"]
           },
           "destination_currency": {
-            "type": "string"
+            "type": ["string", "null"]
           },
           "exchange_rate": {
-            "type": "null"
+            "type": ["number", "null"]
           },
           "tax_rate_id": {
-            "type": "string"
+            "type": ["string", "null"]
           }
         }
       }
@@ -37,7 +37,7 @@
       "type": "object",
       "properties": {
         "payment": {
-          "type": "string"
+          "type": ["string", "null"]
         }
       }
     }

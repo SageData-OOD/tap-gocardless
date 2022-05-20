@@ -5,22 +5,22 @@
       "type": "string"
     },
     "created_at": {
-      "type": "string"
+      "type": ["string", "null"]
     },
     "charge_date": {
-      "type": "string"
+      "type": ["string", "null"]
     },
     "amount": {
-      "type": "integer"
+      "type": ["integer", "null"]
     },
     "description": {
-      "type": "string"
+      "type": ["string", "null"]
     },
     "currency": {
-      "type": "string"
+      "type": ["string", "null"]
     },
     "status": {
-      "type": "string"
+      "type": ["string", "null"]
     },
     "reference": {
       "type": ["string", "null"]
@@ -34,7 +34,7 @@
       }
     },
     "amount_refunded": {
-      "type": "integer"
+      "type": ["integer", "null"]
     },
     "fx": {
       "type": "object",
@@ -57,15 +57,15 @@
       "type": "object",
       "properties": {
         "mandate": {
-          "type": "string"
+          "type": ["string", "null"]
         },
         "creditor": {
-          "type": "string"
+          "type": ["string", "null"]
         }
       }
     },
     "retry_if_possible": {
-      "type": "boolean"
+      "type": ["boolean", "null"]
     }
   }
 }

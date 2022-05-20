@@ -5,28 +5,28 @@
       "type": "string"
     },
     "amount": {
-      "type": "integer"
+      "type": ["integer", "null"]
     },
     "arrival_date": {
-      "type": "string"
+      "type": ["string", "null"]
     },
     "deducted_fees": {
-      "type": "integer"
+      "type": ["integer", "null"]
     },
     "currency": {
-      "type": "string"
+      "type": ["string", "null"]
     },
     "created_at": {
-      "type": "string"
+      "type": ["string", "null"]
     },
     "payout_type": {
-      "type": "string"
+      "type": ["string", "null"]
     },
     "reference": {
-      "type": "string"
+      "type": ["string", "null"]
     },
     "status": {
-      "type": "string"
+      "type": ["string", "null"]
     },
     "fx": {
       "type": "object",
@@ -60,10 +60,10 @@
       "type": "object",
       "properties": {
         "creditor_bank_account": {
-          "type": "string"
+          "type": ["string", "null"]
         },
         "creditor": {
-          "type": "string"
+          "type": ["string", "null"]
         }
       }
     }
