@@ -30,33 +30,50 @@
       ]
     },
     "action": {
-      "type": [
-        "string"
-      ]
+      "type": ["string", "null"]
     },
     "customer_notifications": {
-      "type": [
-        "object"
-      ],
-      "properties": {}
+      "type": ["string", "null"]
     },
     "details": {
-      "type": [
-        "object"
-      ],
-      "properties": {}
+      "type": ["object", "null"],
+      "properties": {
+        "bank_account_id": {"type": ["string", "null"]},
+        "cause": {"type": ["string", "null"]},
+        "currency": {"type": ["string", "null"]},
+        "description": {"type": ["string", "null"]},
+        "not_retried_reason": {"type": ["string", "null"]},
+        "origin": {"type": ["string", "null"]},
+        "property": {"type": ["string", "null"]},
+        "reason_code": {"type": ["string", "null"]},
+        "scheme": {"type": ["string", "null"]},
+        "will_attempt_retry": {"type": ["string", "null"]}
+      }
     },
-    "metadata": {
-      "type": [
-        "object"
-      ],
-      "properties": {}
-    },
+    "metadata":{"type": ["string", "null"]},
     "links": {
-      "type": [
-        "object"
-      ],
-      "properties": {}
+      "type": ["object", "null"],
+      "properties": {
+        "bank_authorisation": {"type": ["string", "null"]},
+        "billing_request": {"type": ["string", "null"]},
+        "billing_request_flow": {"type": ["string", "null"]},
+        "creditor": {"type": ["string", "null"]},
+        "customer": {"type": ["string", "null"]},
+        "customer_bank_account": {"type": ["string", "null"]},
+        "instalment_schedule": {"type": ["string", "null"]},
+        "mandate": {"type": ["string", "null"]},
+        "new_customer_bank_account": {"type": ["string", "null"]},
+        "new_mandate": {"type": ["string", "null"]},
+        "organisation": {"type": ["string", "null"]},
+        "parent_event": {"type": ["string", "null"]},
+        "payer_authorisation": {"type": ["string", "null"]},
+        "payment": {"type": ["string", "null"]},
+        "payment_request_payment": {"type": ["string", "null"]},
+        "payout": {"type": ["string", "null"]},
+        "previous_customer_bank_account": {"type": ["string", "null"]},
+        "refund": {"type": ["string", "null"]},
+        "subscription": {"type": ["string", "null"]}
+      }
     }
   }
 }

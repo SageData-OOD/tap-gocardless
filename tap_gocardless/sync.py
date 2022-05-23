@@ -112,6 +112,9 @@ def sync_endpoint(client,
             **static_params # adds in endpoint specific, sort, filter params
         }
 
+        if stream_name == "tax_rates":
+            params.pop("limit")
+
         if after:
             params['after'] = after
 
@@ -293,7 +296,28 @@ def sync(client, catalog, state, start_date):
                     'parent': 'payout'
                 }
             }
-        }
+        },
+        'refunds': {
+            'path': '/refunds',
+            'data_key': 'refunds',
+            'bookmark_query_field': 'created_at[gt]',
+            'bookmark_field': 'created_at',
+            'bookmark_type': 'datetime',
+            'id_field': 'id'
+        },
+        'tax_rates': {
+            'path': '/tax_rates',
+            'data_key': 'tax_rates',
+            'id_field': 'id'
+        },
+        'customers': {
+            'path': '/customers',
+            'data_key': 'customers',
+            'bookmark_query_field': 'created_at[gt]',
+            'bookmark_field': 'created_at',
+            'bookmark_type': 'datetime',
+            'id_field': 'id'
+        },
     }
 
     # For each endpoint (above), determine if the stream should be streamed

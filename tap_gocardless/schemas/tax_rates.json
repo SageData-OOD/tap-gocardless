@@ -1,0 +1,18 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "id": {"type": ["string"]},
+    "start_date": {
+      "type": ["string", "null"],
+      "format": "date-time"
+    },
+    "end_date": {
+      "type": ["string", "null"],
+      "format": "date-time"
+    },
+    "jurisdiction": {"type": ["string", "null"]},
+    "percentage": {"type": ["string", "null"]},
+    "type": {"type": ["string", "null"]}
+  }
+}

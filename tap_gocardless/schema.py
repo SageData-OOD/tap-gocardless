@@ -24,6 +24,21 @@ STREAMS = {
         'replication_method': 'FULL_TABLE',
         'replication_keys': []
     },
+    'refunds': {
+        'key_properties': ['id'],
+        'replication_method': 'INCREMENTAL',
+        'replication_keys': ['created_at']
+    },
+    'tax_rates': {
+        'key_properties': ['id'],
+        'replication_method': 'FULL_TABLE',
+        'replication_keys': []
+    },
+    'customers': {
+        'key_properties': ['id'],
+        'replication_method': 'INCREMENTAL',
+        'replication_keys': ['created_at']
+    }
 }
 
 def get_abs_path(path):

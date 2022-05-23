@@ -1,33 +1,14 @@
 {
   "type": "object",
+  "additionalProperties": false,
   "properties": {
-    "id": {
-      "type": "string"
-    },
-    "amount": {
-      "type": ["integer", "null"]
-    },
-    "arrival_date": {
-      "type": ["string", "null"]
-    },
-    "deducted_fees": {
-      "type": ["integer", "null"]
-    },
-    "currency": {
-      "type": ["string", "null"]
-    },
+    "id": {"type": ["string"]},
     "created_at": {
-      "type": ["string", "null"]
+      "type": ["string"],
+      "format": "date-time"
     },
-    "payout_type": {
-      "type": ["string", "null"]
-    },
-    "reference": {
-      "type": ["string", "null"]
-    },
-    "status": {
-      "type": ["string", "null"]
-    },
+    "amount": {"type": ["integer", "null"]},
+    "currency": {"type": ["string", "null"]},
     "fx": {
       "type": "object",
       "properties": {
@@ -45,19 +26,22 @@
         }
       }
     },
-    "tax_currency": {
+    "metadata": {
       "type": ["string", "null"]
     },
-    "metadata": {
+    "reference": {
+      "type": ["string", "null"]
+    },
+    "status": {
       "type": ["string", "null"]
     },
     "links": {
       "type": "object",
       "properties": {
-        "creditor_bank_account": {
+        "mandate": {
           "type": ["string", "null"]
         },
-        "creditor": {
+        "payment": {
           "type": ["string", "null"]
         }
       }

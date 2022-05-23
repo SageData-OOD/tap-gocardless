@@ -38,6 +38,12 @@
       "properties": {
         "payment": {
           "type": ["string", "null"]
+        },
+        "mandate": {
+          "type": ["string", "null"]
+        },
+        "refund": {
+          "type": ["string", "null"]
         }
       }
     }

@@ -61,6 +61,15 @@
         },
         "creditor": {
           "type": ["string", "null"]
+        },
+         "instalment_schedule": {
+          "type": ["string", "null"]
+        },
+         "payout": {
+          "type": ["string", "null"]
+        },
+        "subscription": {
+          "type": ["string", "null"]
         }
       }
     },
