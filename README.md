@@ -49,4 +49,4 @@ Run the tap with a target, e.g. postgres
 
 ---
 
-Copyright &copy; 2021 @morrislaptop
+Copyright &copy; 2022 Sagedata
