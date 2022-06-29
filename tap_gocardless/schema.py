@@ -9,6 +9,11 @@ STREAMS = {
         'replication_method': 'INCREMENTAL',
         'replication_keys': ['created_at']
     },
+    "mandates": {
+        'key_properties': ['id'],
+        'replication_method': 'INCREMENTAL',
+        'replication_keys': ['created_at']
+    },
     'payments': {
         'key_properties': ['id'],
         'replication_method': 'INCREMENTAL',

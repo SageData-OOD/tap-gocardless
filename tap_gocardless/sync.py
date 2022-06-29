@@ -273,6 +273,14 @@ def sync(client, catalog, state, start_date):
             'bookmark_type': 'datetime',
             'id_field': 'id'
         },
+        'mandates': {
+            'path': '/mandates',
+            'data_key': 'mandates',
+            'bookmark_query_field': 'created_at[gt]',
+            'bookmark_field': 'created_at',
+            'bookmark_type': 'datetime',
+            'id_field': 'id'
+        },
         'payments': {
             'path': '/payments',
             'data_key': 'payments',

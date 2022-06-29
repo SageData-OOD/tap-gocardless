@@ -1,0 +1,31 @@
+{
+  "type": ["null", "object"],
+  "properties": {
+    "id": {"type": ["string", "null"]},
+    "created_at": {
+      "type": ["string", "null"],
+      "format": "date-time"
+    },
+    "reference": {"type": ["string", "null"]},
+    "status": {"type": ["string", "null"]},
+    "scheme": {"type": ["string", "null"]},
+    "next_possible_charge_date": {
+      "type": ["string", "null"],
+      "format": "date-time"
+    },
+    "metadata": {
+      "type": ["object", "null"],
+      "properties": {
+        "contract": {"type": ["string", "null"]}
+      }
+    },
+    "links": {
+      "type": ["object", "null"],
+      "properties": {
+        "customer_bank_account": {"type": ["string", "null"]},
+        "creditor": {"type": ["string", "null"]},
+        "customer": {"type": ["string", "null"]}
+      }
+    }
+  }
+}

@@ -26,12 +26,7 @@
       "type": ["string", "null"]
     },
     "metadata": {
-      "type": "object",
-      "properties": {
-        "order_dispatch_date": {
-          "type": ["string", "null"]
-        }
-      }
+      "type": ["string", "null"]
     },
     "amount_refunded": {
       "type": ["integer", "null"]
