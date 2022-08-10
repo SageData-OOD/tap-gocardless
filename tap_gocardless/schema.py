@@ -25,8 +25,11 @@ STREAMS = {
         'replication_keys': ['created_at']
     },
     'payout_items': {
-        'key_properties': ["payout_id", "type"],
-        'replication_method': 'FULL_TABLE',
+        # DP: amount is part of the primary key, because payout items don't have their own ids
+        # this is the closest that we can get to reality by having all fields in the payout item
+        # make the primary key
+        'key_properties': ["payout_id",  "payment_id", "type", "amount"],
+        'replication_method': 'INCREMENTAL',
         'replication_keys': []
     },
     'refunds': {

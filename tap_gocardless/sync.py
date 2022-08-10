@@ -45,6 +45,11 @@ def process_records(catalog,
             if parent_id and parent:
                 record[parent + '_id'] = parent_id
 
+            # DP: ugly and dirty fix
+            if stream_name == "payout_items":
+                links = record["links"]
+                record["payment_id"] = links.get("payment")
+
             # Reset max_bookmark_value to new value if higher
             if bookmark_field and (bookmark_field in record):
                 if (max_bookmark_value is None) or \
