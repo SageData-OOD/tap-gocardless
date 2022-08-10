@@ -1,6 +1,9 @@
 {
   "type": "object",
   "properties": {
+    "payout_id": {
+      "type": ["string", "null"]
+    },
     "amount": {
       "type": ["number", "null"]
     },

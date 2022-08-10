@@ -25,7 +25,7 @@ STREAMS = {
         'replication_keys': ['created_at']
     },
     'payout_items': {
-        'key_properties': [],
+        'key_properties': ["payout_id", "type"],
         'replication_method': 'FULL_TABLE',
         'replication_keys': []
     },
