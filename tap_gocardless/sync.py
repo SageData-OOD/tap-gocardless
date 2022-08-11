@@ -110,7 +110,8 @@ def sync_endpoint(client,
         # Bookmark isn't based on an updated ts but instead on created ts.
         # This I assume will create problems for payments getting updated after their 
         # created ts(will it?). For that matter subtract 6 montsh from the saved sync date
-        last_datetime = str(datetime.fromisoformat(str(last_datetime)) - timedelta(months=6))
+        # TODO: format is YYYY-MM-DDTHH:MMZ
+        # last_datetime = str(datetime.fromisoformat(str(last_datetime)) - timedelta(months=6))
         max_bookmark_value = last_datetime
 
     # pagination: loop thru all pages of data
